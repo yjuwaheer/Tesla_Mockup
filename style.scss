@@ -27,6 +27,27 @@ body {
             width: 100%;
             background: white;
             border-radius: 0 0 15px 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .model {
+                font-family: 'Concert One', cursive;
+                font-size: 1.1rem;
+            }
+
+            .gloveBox {
+                font-family: 'Concert One', cursive;
+                font-size: 0.8rem;
+                color: rgb(58, 58, 58);
+                background-color: rgba(0, 0, 0, 0.116);
+                padding: 2px 5px;
+                border-radius: 5px;
+            }
+
+            i {
+                color: black
+            }
         }
     }
 

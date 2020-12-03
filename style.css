@@ -36,6 +36,33 @@ body {
   width: 100%;
   background: white;
   border-radius: 0 0 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .upper .upperItemMiddle .model {
+  font-family: 'Concert One', cursive;
+  font-size: 1.1rem;
+}
+
+.main .upper .upperItemMiddle .gloveBox {
+  font-family: 'Concert One', cursive;
+  font-size: 0.8rem;
+  color: #3a3a3a;
+  background-color: rgba(0, 0, 0, 0.116);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.main .upper .upperItemMiddle i {
+  color: black;
 }
 
 .main .middle {
