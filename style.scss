@@ -87,6 +87,31 @@ body {
             height: 10vh;
             align-self: center;
             border-radius: 15px 15px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .album > img{
+                width: 4.4vw;
+                padding: 3px 0 0 3px;
+                border-top-left-radius: 15px;
+            }
+            i {
+                font-size: 34px;
+            }
+            .title {
+                font-family: 'Quicksand', sans-serif;
+            }
+            .fade {
+                color: rgba(0, 0, 0, 0.432);
+            }
+            audio {
+                outline: none;
+                width: 160px; 
+                box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+                border-radius: 90px;
+                transform: scale(0.8);
+            }
         }
     }
 
