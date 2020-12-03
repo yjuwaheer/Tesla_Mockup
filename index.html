@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Open Street Map -->
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
+    <!-- Material Design Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Tesla Dashboard</title>
 </head>
 <body>
     <div class="main">
         <div class="upper">
             <div class="upperItem">T</div>
-            <div class="upperItem">10:12 PM</div>
-            <div class="upperItem">72°F</div>
-            <div class="upperItem">Lock</div>
+            <div class="upperItem"><i class="material-icons">access_time</i></div>
+            <div class="upperItem"><i class="material-icons">ac_unit</i></div>
+            <div class="upperItem"><i class="material-icons">lock</i></div>
             <div class="upperItemMiddle">
 
             </div>
-            <div class="upperItem">record</div>
+            <div class="upperItem"><i class="material-icons">radio_button_checked</i></div>
             <div class="upperItem">battery</div>
             <div class="upperItem">connectivity</div>
-            <div class="upperItem">bluetooth</div>
+            <div class="upperItem"><i class="material-icons">bluetooth</i></div>
             <div class="upperItem">airbag</div>
         </div>
 
         <div class="middle">
             <div class="middleTitle">
-
+                <span>Navigate to Paradise</span>
             </div>
             <div class="middleButton">
-
+                <span>STOP CAR</span>
             </div>
             <div class="musicPlayer">
-                
+
             </div>
         </div>
 
@@ -47,5 +51,10 @@
             <div class="lowerItem">Seat</div>
         </div>
     </div>
+
+    <!-- Image Credit: https://medium.com/cruise/hd-maps-self-driving-cars-b6444720021c-->
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

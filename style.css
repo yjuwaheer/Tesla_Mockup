@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Quicksand&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(./elements/MMSS2.png);
+  background-image: url(./elements/lidar.gif);
+  background-size: cover;
 }
 
 .main {
@@ -15,7 +17,6 @@ body {
 }
 
 .main .upper {
-  background: red;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4] 7fr (1fr)[5];
@@ -26,18 +27,68 @@ body {
           align-items: center;
 }
 
+.main .upper i {
+  color: white;
+}
+
 .main .upper .upperItemMiddle {
   height: 5vh;
   width: 100%;
   background: white;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0 0 15px 15px;
 }
 
 .main .middle {
-  background: blue;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0 0 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .middle .middleTitle {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 7vh;
+}
+
+.main .middle .middleTitle span {
+  font-family: 'Concert One', cursive;
+  font-size: 2rem;
+  color: white;
+}
+
+.main .middle .middleButton {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 60vh;
+}
+
+.main .middle .middleButton span {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  color: white;
+  background: rgba(12, 12, 12, 0.5);
+  padding: 5px 25px;
+  border-radius: 15px;
+}
+
+.main .middle .musicPlayer {
+  background: white;
+  width: 80vw;
+  height: 10vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 15px 15px 0 0;
 }
 
 .main .lower {
@@ -51,5 +102,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  position: relative;
+}
+
+.main .lower :before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  height: 40px;
+  width: 100vw;
+  border-radius: 0 0 15px 15px;
+  -webkit-box-shadow: 0 20px 0 0 #0c0c0c;
+          box-shadow: 0 20px 0 0 #0c0c0c;
 }
 /*# sourceMappingURL=style.css.map */

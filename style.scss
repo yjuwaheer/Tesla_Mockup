@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Quicksand&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(./elements/MMSS2.png);
+    background-image: url(./elements/lidar.gif);
+    background-size: cover;
 }
 
 .main {
@@ -11,34 +14,58 @@ body {
     grid-template-rows: 5% 85% 10%;
 
     .upper {
-        background: red;
         display: grid;
         grid-template-columns: repeat(4, 1fr) 7fr repeat(5, 1fr);
         justify-items: center;
         align-items: center;
 
+        i {
+            color: white;
+        }
         .upperItemMiddle {
             height: 5vh;
             width: 100%;
             background: white;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-radius: 0 0 15px 15px;
         }
     }
 
     .middle {
-        background: blue;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        //background: blue;
+        border-radius: 0 0 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
 
         .middleTitle {
+            align-self: center;
+            height: 7vh;
 
+            span {
+                font-family: 'Concert One', cursive;
+                font-size: 2rem;
+                color: white;
+            }
         }
         .middleButton {
+            align-self: center;
+            height: 60vh;
 
+            span {
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                color: white;
+                background: rgba(12, 12, 12, 0.5);
+                padding: 5px 25px;
+                border-radius: 15px;
+            }
         }
         .musicPlayer {
-
+            background: white;
+            width: 80vw;
+            height: 10vh;
+            align-self: center;
+            border-radius: 15px 15px 0 0;
         }
     }
 
@@ -48,6 +75,18 @@ body {
         grid-template-columns: repeat(9, 1fr);
         justify-items: center;
         align-items: center;
-        color: white; 
+        color: white;
+        position: relative;
+
+        :before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            left: 0;
+            height: 40px;
+            width: 100vw;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 20px 0 0 rgb(12, 12, 12);
+        }
     }
 }
