@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./elements/MMSS2.png);
+}
+
+.main {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 5% 85% 10%;
+
+    .upper {
+        background: red;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) 7fr repeat(5, 1fr);
+        justify-items: center;
+        align-items: center;
+
+        .upperItemMiddle {
+            height: 5vh;
+            width: 100%;
+            background: white;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+
+    .middle {
+        background: blue;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        .middleTitle {
+
+        }
+        .middleButton {
+
+        }
+        .musicPlayer {
+
+        }
+    }
+
+    .lower {
+        background: rgb(12, 12, 12);
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        justify-items: center;
+        align-items: center;
+        color: white; 
+    }
+}
