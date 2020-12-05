@@ -176,8 +176,8 @@ body {
   height: 40px;
   width: 100vw;
   border-radius: 0 0 15px 15px;
-  -webkit-box-shadow: 0 20px 0 0 #0c0c0c;
-          box-shadow: 0 20px 0 0 #0c0c0c;
+  -webkit-box-shadow: 0 10px 0 0 #0c0c0c;
+          box-shadow: 0 10px 0 0 #0c0c0c;
 }
 
 .main .lower i {
